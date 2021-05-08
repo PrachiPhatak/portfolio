@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles2.css">
+        <title>Prachi Phatak</title>
+    </head>
+    <body>
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+        <div class="main">
+            <div id="portfolio_left_column" class="card side_div column">
+                <div id="profilePicture">
+                    <img src="img/profilePic.jpeg" alt="Profile picture">
+                </div>
+                <div id="contactInfo" class="container">
+                    <div id="name">
+                        <h3>Prachi Phatak</h3>
+                    </div>
+
+                    <div id="contactInfoHeader">
+                        Get in touch!
+                    </div>
+                    <p>Landline:
+                        123-456-7890</p>
+                    <p>Mobile:
+                        123-456-7890</p>
+                    <p>Email:
+                        hello@reallygreatsite.com</p>
+                    <p>GitHub:
+                        <a href="https://github.com/PrachiPhatak"> @PrachiPhatak</a></p>
+                    <p>Address:
+                        123 Anywhere Street, Any City</p>
+                </div>
+                <div class="toggle-container container">
+                    <h3>Dark Theme</h3>
+                    <div class ="toggle-btn" onclick="this.classList.toggle('active'); myFunction();">
+                        <div class="inner-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio_goals" class="card column container professionalGoalsDiv">
+            <h3>Professional Goals</h3>
+            <p>Highly motivated, detail-oriented, ability to work independently and
+                as a part of the team with excellent Technical, Analytical, and Communication skills.
+                Successfully ran profitable business for 4 years.</p>
+        </div>
+
+        <div id="portfolio_main" class="card column container professionalGoalsDiv">
+            <h2>Work Experience</h2>
+            <div id="jobs">
+                <h3>Java Developer</h3>
+                <p>Pros Pricing | Aug 2011- Feb 2015</p>
+                <ul>
+                    <li>Developed and maintained features like search, deal list, Views using JAVA,
+                        Spring/Hibernate framework, Apache Tomcat.
+                    </li>
+                    <li>Participated in a complete software development life cycle for various features.
+                        Implemented and tested cross-sell and up sell web services using SOAP.
+                    </li>
+                </ul>
+
+                <h3>Java Developer</h3>
+                <p>Intertek | Aug 2008 - Aug 2011</p>
+                <ul>
+                    <li>Maintained web-based and client-server multi-tier applications/architectures using
+                        J2EE technologies
+                    </li>
+                    <li>
+                        Wrote client-side validations using Ajax, Javascript, and Struts validation framework.
+                    </li>
+                    <li>Generated backend hibernate DAO and business objects.
+                        Wrote HQL criteria query combined with projection and restrictions to fetch the data
+                        from database
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="academicHistory" class="card column container academic">
+            <h3>University of Houston at Clear lake (Houston TX)</h3>
+            <p>M.S. in computer science | Graduated in 2009</p>
+        </div>
+    </body>
+</html>

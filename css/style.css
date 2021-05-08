@@ -40,8 +40,16 @@ body {
     background-color: var(--backgroundColor);
     color: var(--textColor);
 }
-
-.sidenav a {
+.sidenav-media-icon ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: inline-flex;
+}
+.sidenav-media-icon a {
+    text-decoration: none;
+}
+.sidenav-links-list a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -49,7 +57,7 @@ body {
     display: block;
 }
 
-.sidenav a:hover {
+.sidenav-links-list a:hover {
     color: #f1f1f1;
 }
 

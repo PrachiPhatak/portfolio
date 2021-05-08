@@ -152,15 +152,20 @@ hr {
 }
 .main-contactMe-form-wrapper{
     padding: 3rem;
-    border: 1px solid black;
     text-align: center;
 }
 .main-contactMe-form{
     margin-right: auto;
     margin-left: auto;
 }
+.main-contactMe-form input{
+    padding:0.5rem
+}
+.main-contactMe-form textarea{
+    padding:0.5rem
+}
 .main-contactMe-form .hireMe-button{
-    width: 38rem;
+    width: 39rem;
     background: var(--backgroundColor);
 }
 

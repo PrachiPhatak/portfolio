@@ -124,7 +124,7 @@ hr {
 .sidenav .hireMe-button{
     background: rgba(0, 0, 0, 0.1);
 }
-.main-portfolio-heading .hireMe-button{
+.main-aboutMe-heading .hireMe-button{
     background: var(--backgroundColor);
 }
 
@@ -139,7 +139,7 @@ hr {
     /*overflow-x: hidden;*/
 }
 
-.main-portfolio-heading {
+.main-aboutMe-heading {
     font-size: 1rem;
     height: 15%;
     margin: 0;
@@ -148,50 +148,30 @@ hr {
     color: var(--grey);
     background-color: var(--lightgrey) !important;
 }
-.main-portfolio-heading h2{
+.main-aboutMe-heading h2{
     color: var(--black);
 }
 
-.main-projectListMenu-container {
-    height: 10%;
-    padding: 2rem 2rem 1rem;
-    text-align: center;
-}
-
-.main-projectListMenu {
-    list-style-type: none;
-    text-align: center;
-    font-size: 0.875rem;
-    overflow: hidden;
-}
-
-.main-projectListMenu li {
-    display: inline-block;
-}
-
-.main-projectListMenu li a {
-    padding: 1.5rem;
-    text-decoration: none;
-    color: var(--grey);
-}
-
-.main-projectCards {
+.main-skill-cards {
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
-    padding: 1rem;
+    padding: 0  1rem 1rem;
 }
-.main-projectCard {
+.main-skill-card {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-top: 1rem;
-    height: 10rem;
-    width: 28rem;
+    height: 12rem;
+    width: 20rem;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
 .card {
-    display: inline-flex;
+    /*display: inline-flex;*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 0.875rem;
     transition: 0.3s;
@@ -199,11 +179,20 @@ hr {
 }
 
 .card img {
-    width: 40%;
+    width: 100%;
 }
 
 .card p {
     padding: 1rem;
 }
-
+.main-whatIDo {
+    width: 100%;
+    padding: 3rem;
+    font-size: 1rem;
+    color: var(--grey);
+    line-height:1.5rem;
+}
+.main-whatIDo h2{
+    color: var(--black);
+}
 

@@ -1,14 +1,18 @@
-:root{
-    --green : #54B689;
-    --white: white;
+:root {
+    --backgroundColor: #54B689;
+    --textColor: white;
     --grey: #818181;
+    --lightgrey: #fafafa;
+    --black:black;
 }
+
 body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,
-                "Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",
-                "Noto Color Emoji";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
 }
-.sidenav-wrapper-img{
+
+.sidenav-wrapper-img {
     position: relative;
     width: 160px;
     height: 160px;
@@ -17,10 +21,12 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.sidenav-wrapper-img img{
+
+.sidenav-wrapper-img img {
     width: 100%;
     margin-top: -40px;
 }
+
 .sidenav {
     padding: 1rem 1rem;
     height: 100%;
@@ -31,9 +37,10 @@ body {
     left: 0;
     overflow-x: hidden;
     text-align: center;
-    background-color: var(--green);
-    color: var(--white);
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
 }
+
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -45,65 +52,150 @@ body {
 .sidenav a:hover {
     color: #f1f1f1;
 }
-.sidenav-header-text{
+
+.sidenav-header-text {
     font-weight: bold;
     font-size: 1.5rem;
 }
-.sidenav-intro-text{
+
+.sidenav-intro-text {
     font-size: 0.875rem;
     line-height: 20px;
 }
-.circle{
+
+.circle {
     border-radius: 50%;
     font-size: 2em;
 }
-.fa{
+
+.fa {
     margin: 8px;
-    background: var(--white);
-    color: var(--green);
+    background: var(--textColor);
+    color: var(--backgroundColor);
 }
-.fa-twitter{
+
+.fa-twitter {
     padding: 0.05em 0.07em;
 }
-.fa-linkedin{
+
+.fa-linkedin {
     padding: 0.09em 0.2em;
 }
-.fa-github{
+
+.fa-github {
     padding: 0.05em 0.15em;
 }
+
 .fa-skype {
     padding: 0.09em 0.2em;
 }
+
 hr {
-    border-color: rgba(0,0,0,0.08);
+    border-color: rgba(0, 0, 0, 0.08);
 }
-.main {
-    margin-left: 280px; /* Same as the width of the sidenav */
-    font-size: 24px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-}
-.sidenav-links-list{
+
+.sidenav-links-list {
     list-style-type: none;
     padding: 0;
     margin: 1rem 0 0;
     font-weight: bold;
     line-height: 200%;
-
 }
-.sidenav-hireMe-button{
+.sidenav-links-list a{
+    font-size: 1rem;
+}
+.hireMe-button {
     height: 2rem;
     width: 8rem;
     margin: 1rem 0;
-    color: var(--white);
-    /*background-color: var(--green);*/
-    /*border: solid;*/
+    color: var(--textColor);
     border-radius: 0.5rem;
-    background: rgba(0,0,0,0.3);
     border-color: transparent;
     font-size: 1rem;
 }
-.sidenav-darkMode-header{
+.sidenav .hireMe-button{
+    background: rgba(0, 0, 0, 0.1);
+}
+.main-portfolio-heading .hireMe-button{
+    background: var(--backgroundColor);
+}
+
+.sidenav-darkMode-header {
+    font-weight: bold;
     margin-top: 1rem;
+}
+
+.main {
+    margin-left: 274px; /* Same as the width of the sidenav */
+    font-size: 24px; /* Increased text to enable scrolling */
+    /*overflow-x: hidden;*/
+}
+
+.main-portfolio-heading {
+    font-size: 1rem;
+    height: 15%;
+    margin: 0;
+    padding: 3rem;
+    text-align: center;
+    color: var(--grey);
+    background-color: var(--lightgrey) !important;
+}
+.main-portfolio-heading h2{
+    color: var(--black);
+}
+
+.main-projectListMenu-container {
+    height: 10%;
+    padding: 2rem 2rem 1rem;
+    text-align: center;
+}
+
+.main-projectListMenu {
+    list-style-type: none;
+    text-align: center;
+    font-size: 0.875rem;
+    overflow: hidden;
+}
+
+.main-projectListMenu li {
+    display: inline-block;
+}
+
+.main-projectListMenu li a {
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.main-projectCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding: 1rem;
+}
+.main-projectCard {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    height: 10rem;
+    width: 28rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    display: inline-flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 0.875rem;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.card img {
+    width: 40%;
+}
+
+.card p {
+    padding: 1rem;
 }
 
 

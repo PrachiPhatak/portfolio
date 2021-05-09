@@ -4,10 +4,12 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/styleAboutMe.css">
         <link rel="stylesheet" href="css/blog.css">
+        <link rel="stylesheet" href="css/global.css">
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
         <title>Blog</title>
     </head>
     <body>
+        <script src="js/global.js"></script>
         <div class="container">
             <div class="sidenav">
                 <h3 class="sidenav-header-text"> Prachi Phatak </h3>
@@ -39,6 +41,9 @@
                 <hr>
                 <div class="sidenav-darkMode-header">
                     Dark Mode
+                    <div class ="toggle-btn" onclick="this.classList.toggle('active'); darkModeClicked();">
+                        <div class="inner-circle"></div>
+                    </div>
                 </div>
             </div>
             <div id="#top" class="main">
@@ -47,8 +52,8 @@
                     <p>Welcome to my blog. Subscribe and get the latest blogs in your inbox.</p>
                     <p>
                         <form action="">
-                            <input class ="enterEmailTextBox" type="text" size="40" placeholder="Enter email">
-                            <button class="hireMe-button">Subscribe</button>
+                            <input class ="enterEmailTextBox" type="text" size="40" placeholder="Enter email" required>
+                            <button type="submit" class="hireMe-button">Subscribe</button>
                         </form>
                     </p>
 

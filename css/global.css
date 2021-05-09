@@ -1,0 +1,55 @@
+:root {
+    --backgroundColor: #c7673a;
+    --sideNavColor:var(--backgroundColor);
+    --lightBackgroundColor:#7BE7B0FF;
+    --textColor: white;
+    /*link hover*/
+    --linkHover: rgba(255,255,255,0.6);
+    --textGrey:grey;
+    --lightgrey: #fafafa;
+    /*h2*/
+    --h2Color:black;
+    --black:black;
+    /*Used for hr .toggle-btn.active */
+    --mutedBackground:rgba(0, 0, 0, 0.08);
+    --darkMuted-btn:rgba(0, 0, 0, 0.1);
+    --shadowColor:rgba(0, 0, 0, 0.2);
+    --hireMeButtonColor:var(--darkMuted-btn);
+}
+a{
+    color: var(--backgroundColor);
+    text-decoration: none;
+}
+.dark-mode {
+    --sideNavColor: #2f3f5a;
+    --h2Color: white;
+    background-color: rgb(32, 44, 66);
+    color: var(--textColor);
+    --hireMeButtonColor:var(--backgroundColor)
+}
+.toggle-btn{
+    width: 60px;
+    height: 20px;
+    background-color: var(--backgroundColor);
+    border-radius: 30px;
+    border: 3px solid var(--darkMuted-btn);
+    padding: 2px;
+    transition: all 300ms ease-in-out;
+    margin: 20px auto;
+}
+.toggle-btn > .inner-circle{
+    width: 30px;
+    height: 20px;
+    background-color: var(--darkMuted-btn);
+    border-radius: 40%;
+    transition: all 300ms ease-in-out;
+}
+.toggle-btn.active{
+    background: var(--sideNavColor);
+    border: 3px solid var(--backgroundColor);
+
+}
+.toggle-btn.active > .inner-circle{
+    margin-left: 28px;
+    background-color: var(--backgroundColor);
+}

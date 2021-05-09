@@ -2,11 +2,13 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/styleContactMe.css">
         <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
         <title>Contact Me</title>
     </head>
     <body>
+        <script src="js/global.js"></script>
         <div class="container">
             <div class="sidenav">
                 <h3 class="sidenav-header-text"> Prachi Phatak </h3>
@@ -38,6 +40,9 @@
                 <hr>
                 <div class="sidenav-darkMode-header">
                     Dark Mode
+                    <div class ="toggle-btn" onclick="this.classList.toggle('active'); darkModeClicked();">
+                        <div class="inner-circle"></div>
+                    </div>
                 </div>
             </div>
             <div id="#top" class="main">

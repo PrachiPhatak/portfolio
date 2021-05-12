@@ -1,5 +1,6 @@
 :root {
-    --backgroundColor: #c7673a;
+    --backgroundColor: #41a35a;
+    /*--backgroundColor: rgba(18, 9, 21, 0.48);*/
     --sideNavColor:var(--backgroundColor);
     --lightBackgroundColor:#7BE7B0FF;
     --textColor: white;

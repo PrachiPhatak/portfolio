@@ -1,3 +1,60 @@
+:root {
+    --backgroundColor: #41a35a;
+    /*--backgroundColor: rgba(18, 9, 21, 0.48);*/
+    --sideNavColor:var(--backgroundColor);
+    --lightBackgroundColor:#7BE7B0FF;
+    --textColor: white;
+    /*link hover*/
+    --linkHover: rgba(255,255,255,0.6);
+    --textGrey:grey;
+    --lightgrey: #fafafa;
+    /*h2*/
+    --h2Color:black;
+    --black:black;
+    /*Used for hr .toggle-btn.active */
+    --mutedBackground:rgba(0, 0, 0, 0.08);
+    --darkMuted-btn:rgba(0, 0, 0, 0.1);
+    --shadowColor:rgba(0, 0, 0, 0.2);
+    --hireMeButtonColor:var(--darkMuted-btn);
+}
+a{
+    color: var(--backgroundColor);
+    text-decoration: none;
+}
+.dark-mode {
+    --sideNavColor: #2f3f5a;
+    --h2Color: white;
+    background-color: rgb(32, 44, 66);
+    color: var(--textColor);
+    --hireMeButtonColor:var(--backgroundColor)
+}
+.toggle-btn{
+    width: 60px;
+    height: 20px;
+    background-color: var(--backgroundColor);
+    border-radius: 30px;
+    border: 3px solid var(--darkMuted-btn);
+    padding: 2px;
+    transition: all 300ms ease-in-out;
+    margin: 20px auto;
+}
+.toggle-btn > .inner-circle{
+    width: 30px;
+    height: 20px;
+    background-color: var(--darkMuted-btn);
+    border-radius: 40%;
+    transition: all 300ms ease-in-out;
+}
+.toggle-btn.active{
+    background: var(--sideNavColor);
+    border: 3px solid var(--backgroundColor);
+
+}
+.toggle-btn.active > .inner-circle{
+    margin-left: 28px;
+    background-color: var(--backgroundColor);
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
     "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
@@ -83,7 +140,7 @@ body {
 }
 
 .fa-github {
-    padding: 0.05em 0.2em;
+    padding: 0.05em 0.15em;
 }
 
 .fa-skype {
@@ -91,7 +148,7 @@ body {
 }
 
 hr {
-    border-color: var(--mutedBackground);
+    border-color: rgba(0, 0, 0, 0.08);
 }
 
 .sidenav-links-list {
@@ -122,7 +179,6 @@ hr {
 .main-aboutMe-heading .hireMe-button{
     background: var(--backgroundColor);
 }
-
 .sidenav-darkMode-header {
     font-weight: bold;
     margin-top: 1rem;
@@ -134,7 +190,7 @@ hr {
     /*overflow-x: hidden;*/
 }
 
-.main-aboutMe-heading {
+.main-contactMe-heading {
     font-size: 1rem;
     height: 15%;
     margin: 0;
@@ -143,51 +199,28 @@ hr {
     color: var(--textGrey);
     background-color: var(--mutedBackground) !important;
 }
-.main-aboutMe-heading h2{
+.main-contactMe-heading h2{
     color: var(--h2Color);
 }
-
-.main-skill-cards {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
-    padding: 0  1rem 1rem;
-}
-.main-skill-card {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 1rem;
-    height: 12rem;
-    width: 20rem;
-    background-color: var(--mutedBackground);
-}
-
-.card {
-    /*display: inline-flex;*/
-    box-shadow: 0 4px 8px var(--shadowColor);
-    font-size: 0.875rem;
-    transition: 0.3s;
-    border-radius: 3px;
-}
-
-.card img {
-    width: 100%;
-}
-
-.card p {
-    padding: 1rem;
-}
-.main-whatIDo {
-    width: 100%;
+.main-contactMe-form-wrapper{
     padding: 3rem;
-    font-size: 1rem;
-    color: var(--textGrey);
-    line-height:1.5rem;
+    text-align: center;
 }
-.main-whatIDo h2{
-    color: var(--h2Color);
+.main-contactMe-form{
+    margin-right: auto;
+    margin-left: auto;
 }
+.main-contactMe-form input{
+    padding:0.5rem
+}
+.main-contactMe-form textarea{
+    padding:0.5rem
+}
+.main-contactMe-form .hireMe-button{
+    width: 39rem;
+    background: var(--backgroundColor);
+}
+
+
+
 

@@ -1,8 +1,8 @@
 :root {
-    --backgroundColor: #41a35a;
+    --backgroundColor: #D67553;
     /*--backgroundColor: rgba(18, 9, 21, 0.48);*/
     --sideNavColor:var(--backgroundColor);
-    --lightBackgroundColor:#7BE7B0FF;
+    --lightBackgroundColor:#D67553;
     --textColor: white;
     /*link hover*/
     --linkHover: rgba(255,255,255,0.6);
